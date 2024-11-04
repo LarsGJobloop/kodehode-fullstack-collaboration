@@ -7,7 +7,7 @@
 
 ## Local Development
 
-> [!INFO]
+> [!NOTE]
 > This project requires [.NET Version 8](https://dotnet.microsoft.com/en-us/download) to be run.
 
 ### Startup project
