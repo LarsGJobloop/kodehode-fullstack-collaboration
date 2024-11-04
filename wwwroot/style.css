@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.bg-primary {
+  background-color: cornflowerblue;
+}
+
+.bg-accent {
+  background-color: coral;
+}
+
+.p-sm {
+  padding: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-xtra-bold {
+  font-weight: 900;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.transition {
+  transition: all 150ms ease-in-out;
+}
+
+.hover\:scale-110:hover {
+  /* scale: 1.1; */
+  transform: scale(1.1);
+}
+
+.hover\:animate-rotate:hover {
+  animation: 2000ms rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slidin-left {
+  animation: slidin-left 750ms cubic-bezier(0, 0, 0.5, 1.5);
+}
+
+@keyframes slidin-left {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
